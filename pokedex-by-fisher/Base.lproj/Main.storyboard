@@ -181,6 +181,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6aE-ge-44w">
                                         <rect key="frame" x="12" y="4" width="42" height="38"/>
                                         <state key="normal" image="back"/>
+                                        <connections>
+                                            <action selector="backBtnPressed:" destination="Teo-FE-zli" eventType="touchUpInside" id="dDN-Jt-oyk"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -214,9 +217,8 @@
                                                     <constraint firstAttribute="height" constant="120" id="hoy-g1-M9a"/>
                                                 </constraints>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="Ix9-Uk-DbF">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tousled aesthetic everyday carry, kombucha fanny pack tumblr listicle flannel. Keffiyeh biodiesel lumbersexual" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="Ix9-Uk-DbF">
                                                 <rect key="frame" x="120" y="0.0" width="440" height="120"/>
-                                                <string key="text">Tousled aesthetic everyday carry, kombucha fanny pack tumblr listicle flannel. Keffiyeh biodiesel lumbersexual, tattooed cliche gluten-free +1 marfa fanny pack roof party occupy waistcoat. Gochujang drinking vinegar farm-to-table wolf bicycle rights XOXO. Celiac fashion axe gentrify artisan, meggings PBR&amp;B </string>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
@@ -383,7 +385,18 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="attackLbl" destination="wlp-YE-yOi" id="5Rz-o0-ql5"/>
+                        <outlet property="currentEvoImg" destination="XKc-fJ-qta" id="gQp-1A-aiY"/>
+                        <outlet property="defenseLbl" destination="yDw-gi-mng" id="7C1-8j-Rhc"/>
+                        <outlet property="descriptionLbl" destination="Ix9-Uk-DbF" id="D1h-uS-w8u"/>
+                        <outlet property="evoLbl" destination="MYg-dk-bEL" id="LBu-Dt-9nS"/>
+                        <outlet property="heightLbl" destination="X3l-ID-YJp" id="x70-DQ-AK2"/>
+                        <outlet property="mainImg" destination="G4o-YU-Bds" id="Lsh-Og-LDw"/>
                         <outlet property="nameLbl" destination="GGY-Gv-9fo" id="pXr-1z-1Rz"/>
+                        <outlet property="nextEvoImg" destination="sWT-Te-ri5" id="LgI-ar-IeA"/>
+                        <outlet property="pokedexLbl" destination="Mcr-c2-3IY" id="6Uz-wI-h2i"/>
+                        <outlet property="typeLbl" destination="uWE-4d-it0" id="72o-LR-7U6"/>
+                        <outlet property="weightLbl" destination="GO8-B8-tVA" id="8mV-18-RMN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zzz-UB-GV4" userLabel="First Responder" sceneMemberID="firstResponder"/>

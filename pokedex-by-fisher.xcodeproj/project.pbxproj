@@ -1,364 +1,930 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		AD16C3CE1CDB7A430000FEB6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD16C3CD1CDB7A430000FEB6 /* AppDelegate.swift */; };
-		AD16C3D01CDB7A430000FEB6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD16C3CF1CDB7A430000FEB6 /* ViewController.swift */; };
-		AD16C3D31CDB7A430000FEB6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD16C3D11CDB7A430000FEB6 /* Main.storyboard */; };
-		AD16C3D51CDB7A430000FEB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD16C3D41CDB7A430000FEB6 /* Assets.xcassets */; };
-		AD16C3D81CDB7A430000FEB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD16C3D61CDB7A430000FEB6 /* LaunchScreen.storyboard */; };
-		AD16C3E01CDB7D2E0000FEB6 /* pokemon.csv in Resources */ = {isa = PBXBuildFile; fileRef = AD16C3DF1CDB7D2E0000FEB6 /* pokemon.csv */; };
-		AD16C3E31CDB7E550000FEB6 /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD16C3E21CDB7E550000FEB6 /* Pokemon.swift */; };
-		AD16C3E61CDB911B0000FEB6 /* PokeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD16C3E51CDB911B0000FEB6 /* PokeCell.swift */; };
-		AD16C3E91CDC320A0000FEB6 /* csv.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD16C3E81CDC320A0000FEB6 /* csv.swift */; };
-		AD16C3ED1CDC3B960000FEB6 /* pokeFonts.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD16C3EC1CDC3B960000FEB6 /* pokeFonts.ttf */; };
-		AD16C3EF1CDC41DC0000FEB6 /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AD16C3EE1CDC41DC0000FEB6 /* music.mp3 */; };
-		AD16C3F11CDC6BB10000FEB6 /* PokemonDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD16C3F01CDC6BB10000FEB6 /* PokemonDetailVC.swift */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXFileReference section */
-		AD16C3CA1CDB7A430000FEB6 /* pokedex-by-fisher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "pokedex-by-fisher.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AD16C3CD1CDB7A430000FEB6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AD16C3CF1CDB7A430000FEB6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		AD16C3D21CDB7A430000FEB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		AD16C3D41CDB7A430000FEB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		AD16C3D71CDB7A430000FEB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		AD16C3D91CDB7A430000FEB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AD16C3DF1CDB7D2E0000FEB6 /* pokemon.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pokemon.csv; sourceTree = "<group>"; };
-		AD16C3E21CDB7E550000FEB6 /* Pokemon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
-		AD16C3E51CDB911B0000FEB6 /* PokeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokeCell.swift; sourceTree = "<group>"; };
-		AD16C3E81CDC320A0000FEB6 /* csv.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = csv.swift; sourceTree = "<group>"; };
-		AD16C3EC1CDC3B960000FEB6 /* pokeFonts.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = pokeFonts.ttf; sourceTree = "<group>"; };
-		AD16C3EE1CDC41DC0000FEB6 /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music.mp3; sourceTree = "<group>"; };
-		AD16C3F01CDC6BB10000FEB6 /* PokemonDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokemonDetailVC.swift; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		AD16C3C71CDB7A430000FEB6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		AD16C3C11CDB7A430000FEB6 = {
-			isa = PBXGroup;
-			children = (
-				AD16C3CC1CDB7A430000FEB6 /* pokedex-by-fisher */,
-				AD16C3CB1CDB7A430000FEB6 /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		AD16C3CB1CDB7A430000FEB6 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				AD16C3CA1CDB7A430000FEB6 /* pokedex-by-fisher.app */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		AD16C3CC1CDB7A430000FEB6 /* pokedex-by-fisher */ = {
-			isa = PBXGroup;
-			children = (
-				AD16C3E11CDB7E380000FEB6 /* Model */,
-				AD16C3E41CDB90BB0000FEB6 /* View */,
-				AD16C3EB1CDC32280000FEB6 /* Controller */,
-				AD16C3D11CDB7A430000FEB6 /* Main.storyboard */,
-				AD16C3D61CDB7A430000FEB6 /* LaunchScreen.storyboard */,
-				AD16C3CD1CDB7A430000FEB6 /* AppDelegate.swift */,
-				AD16C3D91CDB7A430000FEB6 /* Info.plist */,
-				AD16C3EA1CDC32210000FEB6 /* Util */,
-				AD16C3E71CDC31E70000FEB6 /* Resources */,
-			);
-			path = "pokedex-by-fisher";
-			sourceTree = "<group>";
-		};
-		AD16C3E11CDB7E380000FEB6 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				AD16C3E21CDB7E550000FEB6 /* Pokemon.swift */,
-			);
-			name = Model;
-			sourceTree = "<group>";
-		};
-		AD16C3E41CDB90BB0000FEB6 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				AD16C3E51CDB911B0000FEB6 /* PokeCell.swift */,
-			);
-			name = View;
-			sourceTree = "<group>";
-		};
-		AD16C3E71CDC31E70000FEB6 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				AD16C3EE1CDC41DC0000FEB6 /* music.mp3 */,
-				AD16C3EC1CDC3B960000FEB6 /* pokeFonts.ttf */,
-				AD16C3DF1CDB7D2E0000FEB6 /* pokemon.csv */,
-				AD16C3D41CDB7A430000FEB6 /* Assets.xcassets */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		AD16C3EA1CDC32210000FEB6 /* Util */ = {
-			isa = PBXGroup;
-			children = (
-				AD16C3E81CDC320A0000FEB6 /* csv.swift */,
-			);
-			name = Util;
-			sourceTree = "<group>";
-		};
-		AD16C3EB1CDC32280000FEB6 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				AD16C3CF1CDB7A430000FEB6 /* ViewController.swift */,
-				AD16C3F01CDC6BB10000FEB6 /* PokemonDetailVC.swift */,
-			);
-			name = Controller;
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		AD16C3C91CDB7A430000FEB6 /* pokedex-by-fisher */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = AD16C3DC1CDB7A430000FEB6 /* Build configuration list for PBXNativeTarget "pokedex-by-fisher" */;
-			buildPhases = (
-				AD16C3C61CDB7A430000FEB6 /* Sources */,
-				AD16C3C71CDB7A430000FEB6 /* Frameworks */,
-				AD16C3C81CDB7A430000FEB6 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "pokedex-by-fisher";
-			productName = "pokedex-by-fisher";
-			productReference = AD16C3CA1CDB7A430000FEB6 /* pokedex-by-fisher.app */;
-			productType = "com.apple.product-type.application";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		AD16C3C21CDB7A430000FEB6 /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
-				ORGANIZATIONNAME = "Xiao Ding, Liang";
-				TargetAttributes = {
-					AD16C3C91CDB7A430000FEB6 = {
-						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = WNRJ7KGFQ8;
-					};
-				};
-			};
-			buildConfigurationList = AD16C3C51CDB7A430000FEB6 /* Build configuration list for PBXProject "pokedex-by-fisher" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-				Base,
-			);
-			mainGroup = AD16C3C11CDB7A430000FEB6;
-			productRefGroup = AD16C3CB1CDB7A430000FEB6 /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				AD16C3C91CDB7A430000FEB6 /* pokedex-by-fisher */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		AD16C3C81CDB7A430000FEB6 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AD16C3D81CDB7A430000FEB6 /* LaunchScreen.storyboard in Resources */,
-				AD16C3D51CDB7A430000FEB6 /* Assets.xcassets in Resources */,
-				AD16C3EF1CDC41DC0000FEB6 /* music.mp3 in Resources */,
-				AD16C3E01CDB7D2E0000FEB6 /* pokemon.csv in Resources */,
-				AD16C3D31CDB7A430000FEB6 /* Main.storyboard in Resources */,
-				AD16C3ED1CDC3B960000FEB6 /* pokeFonts.ttf in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		AD16C3C61CDB7A430000FEB6 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AD16C3E61CDB911B0000FEB6 /* PokeCell.swift in Sources */,
-				AD16C3D01CDB7A430000FEB6 /* ViewController.swift in Sources */,
-				AD16C3CE1CDB7A430000FEB6 /* AppDelegate.swift in Sources */,
-				AD16C3F11CDC6BB10000FEB6 /* PokemonDetailVC.swift in Sources */,
-				AD16C3E31CDB7E550000FEB6 /* Pokemon.swift in Sources */,
-				AD16C3E91CDC320A0000FEB6 /* csv.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		AD16C3D11CDB7A430000FEB6 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AD16C3D21CDB7A430000FEB6 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		AD16C3D61CDB7A430000FEB6 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AD16C3D71CDB7A430000FEB6 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
-/* Begin XCBuildConfiguration section */
-		AD16C3DA1CDB7A430000FEB6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		AD16C3DB1CDB7A430000FEB6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		AD16C3DD1CDB7A430000FEB6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "pokedex-by-fisher/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "net.fisherliang.pokedex-by-fisher";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		AD16C3DE1CDB7A430000FEB6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "pokedex-by-fisher/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "net.fisherliang.pokedex-by-fisher";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		AD16C3C51CDB7A430000FEB6 /* Build configuration list for PBXProject "pokedex-by-fisher" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AD16C3DA1CDB7A430000FEB6 /* Debug */,
-				AD16C3DB1CDB7A430000FEB6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		AD16C3DC1CDB7A430000FEB6 /* Build configuration list for PBXNativeTarget "pokedex-by-fisher" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AD16C3DD1CDB7A430000FEB6 /* Debug */,
-				AD16C3DE1CDB7A430000FEB6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = AD16C3C21CDB7A430000FEB6 /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>12F175761A718DFFC81A0BDF</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-pokedex-by-fisher/Pods-pokedex-by-fisher-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>31C48835CB0BC05F51C70257</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>5FFB038FF301A547105C49F8</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>405384711303872F76D4A820</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>E06086F59FBB6C7049FA7BCD</string>
+				<string>9060B39DC0E1970163EE0F78</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5FFB038FF301A547105C49F8</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Pods_pokedex_by_fisher.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>720B3AECE884E1A2A9D3AE61</key>
+		<dict>
+			<key>fileRef</key>
+			<string>5FFB038FF301A547105C49F8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9060B39DC0E1970163EE0F78</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-pokedex-by-fisher.release.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-pokedex-by-fisher/Pods-pokedex-by-fisher.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9AECA49FF8301C32E0DA936D</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Embed Pods Frameworks</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-pokedex-by-fisher/Pods-pokedex-by-fisher-frameworks.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>AD16C3C11CDB7A430000FEB6</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>AD16C3CC1CDB7A430000FEB6</string>
+				<string>AD16C3CB1CDB7A430000FEB6</string>
+				<string>405384711303872F76D4A820</string>
+				<string>31C48835CB0BC05F51C70257</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AD16C3C21CDB7A430000FEB6</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>LastSwiftUpdateCheck</key>
+				<string>0730</string>
+				<key>LastUpgradeCheck</key>
+				<string>0730</string>
+				<key>ORGANIZATIONNAME</key>
+				<string>Xiao Ding, Liang</string>
+				<key>TargetAttributes</key>
+				<dict>
+					<key>AD16C3C91CDB7A430000FEB6</key>
+					<dict>
+						<key>CreatedOnToolsVersion</key>
+						<string>7.3</string>
+						<key>DevelopmentTeam</key>
+						<string>WNRJ7KGFQ8</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>AD16C3C51CDB7A430000FEB6</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+				<string>Base</string>
+			</array>
+			<key>mainGroup</key>
+			<string>AD16C3C11CDB7A430000FEB6</string>
+			<key>productRefGroup</key>
+			<string>AD16C3CB1CDB7A430000FEB6</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>AD16C3C91CDB7A430000FEB6</string>
+			</array>
+		</dict>
+		<key>AD16C3C51CDB7A430000FEB6</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>AD16C3DA1CDB7A430000FEB6</string>
+				<string>AD16C3DB1CDB7A430000FEB6</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>AD16C3C61CDB7A430000FEB6</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>AD16C3E61CDB911B0000FEB6</string>
+				<string>AD16C3D01CDB7A430000FEB6</string>
+				<string>AD16C3CE1CDB7A430000FEB6</string>
+				<string>AD16C3F11CDC6BB10000FEB6</string>
+				<string>AD16C3E31CDB7E550000FEB6</string>
+				<string>AD16C3E91CDC320A0000FEB6</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>AD16C3C71CDB7A430000FEB6</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>720B3AECE884E1A2A9D3AE61</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>AD16C3C81CDB7A430000FEB6</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>AD16C3D81CDB7A430000FEB6</string>
+				<string>AD16C3D51CDB7A430000FEB6</string>
+				<string>AD16C3EF1CDC41DC0000FEB6</string>
+				<string>AD16C3E01CDB7D2E0000FEB6</string>
+				<string>AD16C3D31CDB7A430000FEB6</string>
+				<string>AD16C3ED1CDC3B960000FEB6</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>AD16C3C91CDB7A430000FEB6</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>AD16C3DC1CDB7A430000FEB6</string>
+			<key>buildPhases</key>
+			<array>
+				<string>ED8BB5501FFB1064F377EEF7</string>
+				<string>AD16C3C61CDB7A430000FEB6</string>
+				<string>AD16C3C71CDB7A430000FEB6</string>
+				<string>AD16C3C81CDB7A430000FEB6</string>
+				<string>9AECA49FF8301C32E0DA936D</string>
+				<string>12F175761A718DFFC81A0BDF</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>pokedex-by-fisher</string>
+			<key>productName</key>
+			<string>pokedex-by-fisher</string>
+			<key>productReference</key>
+			<string>AD16C3CA1CDB7A430000FEB6</string>
+			<key>productType</key>
+			<string>com.apple.product-type.application</string>
+		</dict>
+		<key>AD16C3CA1CDB7A430000FEB6</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.application</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>pokedex-by-fisher.app</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>AD16C3CB1CDB7A430000FEB6</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>AD16C3CA1CDB7A430000FEB6</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AD16C3CC1CDB7A430000FEB6</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>AD16C3E11CDB7E380000FEB6</string>
+				<string>AD16C3E41CDB90BB0000FEB6</string>
+				<string>AD16C3EB1CDC32280000FEB6</string>
+				<string>AD16C3D11CDB7A430000FEB6</string>
+				<string>AD16C3D61CDB7A430000FEB6</string>
+				<string>AD16C3CD1CDB7A430000FEB6</string>
+				<string>AD16C3D91CDB7A430000FEB6</string>
+				<string>AD16C3EA1CDC32210000FEB6</string>
+				<string>AD16C3E71CDC31E70000FEB6</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>pokedex-by-fisher</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AD16C3CD1CDB7A430000FEB6</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>AppDelegate.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AD16C3CE1CDB7A430000FEB6</key>
+		<dict>
+			<key>fileRef</key>
+			<string>AD16C3CD1CDB7A430000FEB6</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>AD16C3CF1CDB7A430000FEB6</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>ViewController.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AD16C3D01CDB7A430000FEB6</key>
+		<dict>
+			<key>fileRef</key>
+			<string>AD16C3CF1CDB7A430000FEB6</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>AD16C3D11CDB7A430000FEB6</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>AD16C3D21CDB7A430000FEB6</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>Main.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AD16C3D21CDB7A430000FEB6</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>name</key>
+			<string>Base</string>
+			<key>path</key>
+			<string>Base.lproj/Main.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AD16C3D31CDB7A430000FEB6</key>
+		<dict>
+			<key>fileRef</key>
+			<string>AD16C3D11CDB7A430000FEB6</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>AD16C3D41CDB7A430000FEB6</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>folder.assetcatalog</string>
+			<key>path</key>
+			<string>Assets.xcassets</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AD16C3D51CDB7A430000FEB6</key>
+		<dict>
+			<key>fileRef</key>
+			<string>AD16C3D41CDB7A430000FEB6</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>AD16C3D61CDB7A430000FEB6</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>AD16C3D71CDB7A430000FEB6</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>LaunchScreen.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AD16C3D71CDB7A430000FEB6</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>name</key>
+			<string>Base</string>
+			<key>path</key>
+			<string>Base.lproj/LaunchScreen.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AD16C3D81CDB7A430000FEB6</key>
+		<dict>
+			<key>fileRef</key>
+			<string>AD16C3D61CDB7A430000FEB6</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>AD16C3D91CDB7A430000FEB6</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AD16C3DA1CDB7A430000FEB6</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_ANALYZER_NONNULL</key>
+				<string>YES</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>ENABLE_TESTABILITY</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.3</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SWIFT_OPTIMIZATION_LEVEL</key>
+				<string>-Onone</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>AD16C3DB1CDB7A430000FEB6</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_ANALYZER_NONNULL</key>
+				<string>YES</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf-with-dsym</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.3</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>AD16C3DC1CDB7A430000FEB6</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>AD16C3DD1CDB7A430000FEB6</string>
+				<string>AD16C3DE1CDB7A430000FEB6</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>AD16C3DD1CDB7A430000FEB6</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>E06086F59FBB6C7049FA7BCD</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>INFOPLIST_FILE</key>
+				<string>pokedex-by-fisher/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>net.fisherliang.pokedex-by-fisher</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>AD16C3DE1CDB7A430000FEB6</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>9060B39DC0E1970163EE0F78</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>INFOPLIST_FILE</key>
+				<string>pokedex-by-fisher/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>net.fisherliang.pokedex-by-fisher</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>AD16C3DF1CDB7D2E0000FEB6</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>path</key>
+			<string>pokemon.csv</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AD16C3E01CDB7D2E0000FEB6</key>
+		<dict>
+			<key>fileRef</key>
+			<string>AD16C3DF1CDB7D2E0000FEB6</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>AD16C3E11CDB7E380000FEB6</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>AD16C3E21CDB7E550000FEB6</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Model</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AD16C3E21CDB7E550000FEB6</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>Pokemon.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AD16C3E31CDB7E550000FEB6</key>
+		<dict>
+			<key>fileRef</key>
+			<string>AD16C3E21CDB7E550000FEB6</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>AD16C3E41CDB90BB0000FEB6</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>AD16C3E51CDB911B0000FEB6</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>View</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AD16C3E51CDB911B0000FEB6</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>PokeCell.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AD16C3E61CDB911B0000FEB6</key>
+		<dict>
+			<key>fileRef</key>
+			<string>AD16C3E51CDB911B0000FEB6</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>AD16C3E71CDC31E70000FEB6</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>AD16C3EE1CDC41DC0000FEB6</string>
+				<string>AD16C3EC1CDC3B960000FEB6</string>
+				<string>AD16C3DF1CDB7D2E0000FEB6</string>
+				<string>AD16C3D41CDB7A430000FEB6</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Resources</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AD16C3E81CDC320A0000FEB6</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>csv.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AD16C3E91CDC320A0000FEB6</key>
+		<dict>
+			<key>fileRef</key>
+			<string>AD16C3E81CDC320A0000FEB6</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>AD16C3EA1CDC32210000FEB6</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>AD16C3E81CDC320A0000FEB6</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Util</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AD16C3EB1CDC32280000FEB6</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>AD16C3CF1CDB7A430000FEB6</string>
+				<string>AD16C3F01CDC6BB10000FEB6</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Controller</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AD16C3EC1CDC3B960000FEB6</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file</string>
+			<key>path</key>
+			<string>pokeFonts.ttf</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AD16C3ED1CDC3B960000FEB6</key>
+		<dict>
+			<key>fileRef</key>
+			<string>AD16C3EC1CDC3B960000FEB6</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>AD16C3EE1CDC41DC0000FEB6</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>audio.mp3</string>
+			<key>path</key>
+			<string>music.mp3</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AD16C3EF1CDC41DC0000FEB6</key>
+		<dict>
+			<key>fileRef</key>
+			<string>AD16C3EE1CDC41DC0000FEB6</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>AD16C3F01CDC6BB10000FEB6</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>PokemonDetailVC.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AD16C3F11CDC6BB10000FEB6</key>
+		<dict>
+			<key>fileRef</key>
+			<string>AD16C3F01CDC6BB10000FEB6</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>E06086F59FBB6C7049FA7BCD</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-pokedex-by-fisher.debug.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-pokedex-by-fisher/Pods-pokedex-by-fisher.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>ED8BB5501FFB1064F377EEF7</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>AD16C3C21CDB7A430000FEB6</string>
+</dict>
+</plist>
