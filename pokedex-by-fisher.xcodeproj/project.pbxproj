@@ -60,8 +60,8 @@
 		AD16C3CC1CDB7A430000FEB6 /* pokedex-by-fisher */ = {
 			isa = PBXGroup;
 			children = (
-				AD16C3E41CDB90BB0000FEB6 /* View */,
 				AD16C3E11CDB7E380000FEB6 /* Model */,
+				AD16C3E41CDB90BB0000FEB6 /* View */,
 				AD16C3CD1CDB7A430000FEB6 /* AppDelegate.swift */,
 				AD16C3CF1CDB7A430000FEB6 /* ViewController.swift */,
 				AD16C3D11CDB7A430000FEB6 /* Main.storyboard */,
