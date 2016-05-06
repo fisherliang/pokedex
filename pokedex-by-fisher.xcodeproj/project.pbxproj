@@ -18,6 +18,7 @@
 		AD16C3E91CDC320A0000FEB6 /* csv.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD16C3E81CDC320A0000FEB6 /* csv.swift */; };
 		AD16C3ED1CDC3B960000FEB6 /* pokeFonts.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD16C3EC1CDC3B960000FEB6 /* pokeFonts.ttf */; };
 		AD16C3EF1CDC41DC0000FEB6 /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AD16C3EE1CDC41DC0000FEB6 /* music.mp3 */; };
+		AD16C3F11CDC6BB10000FEB6 /* PokemonDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD16C3F01CDC6BB10000FEB6 /* PokemonDetailVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		AD16C3E81CDC320A0000FEB6 /* csv.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = csv.swift; sourceTree = "<group>"; };
 		AD16C3EC1CDC3B960000FEB6 /* pokeFonts.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = pokeFonts.ttf; sourceTree = "<group>"; };
 		AD16C3EE1CDC41DC0000FEB6 /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music.mp3; sourceTree = "<group>"; };
+		AD16C3F01CDC6BB10000FEB6 /* PokemonDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokemonDetailVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,14 +68,15 @@
 		AD16C3CC1CDB7A430000FEB6 /* pokedex-by-fisher */ = {
 			isa = PBXGroup;
 			children = (
-				AD16C3EA1CDC32210000FEB6 /* Util */,
-				AD16C3E71CDC31E70000FEB6 /* Resources */,
 				AD16C3E11CDB7E380000FEB6 /* Model */,
 				AD16C3E41CDB90BB0000FEB6 /* View */,
-				AD16C3CD1CDB7A430000FEB6 /* AppDelegate.swift */,
 				AD16C3EB1CDC32280000FEB6 /* Controller */,
+				AD16C3D11CDB7A430000FEB6 /* Main.storyboard */,
 				AD16C3D61CDB7A430000FEB6 /* LaunchScreen.storyboard */,
+				AD16C3CD1CDB7A430000FEB6 /* AppDelegate.swift */,
 				AD16C3D91CDB7A430000FEB6 /* Info.plist */,
+				AD16C3EA1CDC32210000FEB6 /* Util */,
+				AD16C3E71CDC31E70000FEB6 /* Resources */,
 			);
 			path = "pokedex-by-fisher";
 			sourceTree = "<group>";
@@ -89,7 +92,6 @@
 		AD16C3E41CDB90BB0000FEB6 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				AD16C3D11CDB7A430000FEB6 /* Main.storyboard */,
 				AD16C3E51CDB911B0000FEB6 /* PokeCell.swift */,
 			);
 			name = View;
@@ -118,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				AD16C3CF1CDB7A430000FEB6 /* ViewController.swift */,
+				AD16C3F01CDC6BB10000FEB6 /* PokemonDetailVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 				AD16C3E61CDB911B0000FEB6 /* PokeCell.swift in Sources */,
 				AD16C3D01CDB7A430000FEB6 /* ViewController.swift in Sources */,
 				AD16C3CE1CDB7A430000FEB6 /* AppDelegate.swift in Sources */,
+				AD16C3F11CDC6BB10000FEB6 /* PokemonDetailVC.swift in Sources */,
 				AD16C3E31CDB7E550000FEB6 /* Pokemon.swift in Sources */,
 				AD16C3E91CDC320A0000FEB6 /* csv.swift in Sources */,
 			);
